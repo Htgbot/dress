@@ -21,7 +21,7 @@ window.setupModalCleanup = setupModalCleanup;
 // Load system configuration from JSON file
 async function loadSystemConfig() {
     try {
-        const response = await fetch('../data/system.json');
+        const response = await fetch('./data/system.json');
         if (!response.ok) {
             throw new Error('Failed to load system configuration');
         }
